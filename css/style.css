@@ -71,11 +71,14 @@ body{
   margin: 0 auto;
 }
 .top_character{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
+  max-width: 900px;
   width: 100%;
+  margin: 0 auto;
+}
+.top_character img{
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 
@@ -136,7 +139,7 @@ flex-wrap: wrap;
 .alon img{
   display: block;
   max-width: 400px;
-  width: 100%;
+  width: 93%;
   margin: 0 auto;
 }
 .prof_alon{
@@ -177,7 +180,7 @@ flex-wrap: wrap;
 .kohaku img{
   display: block;
   max-width: 400px;
-  width: 100%;
+  width: 93%;
   margin: 0 auto;
 }
 .prof_kohaku{
