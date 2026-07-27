@@ -11,6 +11,21 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+body::before{
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+
+    background: linear-gradient(
+        to bottom,
+        #FFCBFF 0%,
+        #C6CBFF 50%,
+        #B2FFFF 100%
+    );
+
+    background-size: cover;
+}
 
 /* 星レイヤー */
 #stars{
