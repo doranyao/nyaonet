@@ -336,3 +336,53 @@ margin-right: 10px;
   text-align: center;
   padding: 10px 0;
 }
+
+/* 言語切り替えコンテナ（全体の枠） */
+.lang-switch-container {
+  position: fixed; /* ★ absolute から fixed に変更して常に画面に追従 */
+  top: 20px;
+  right: 20px;
+  z-index: 1000; /* 他の要素の下に隠れないように最前面に配置 */
+  font-family: sans-serif;
+  font-size: 14px;
+  background-color: #ffffff; /* 土台の背景色 */
+  padding: 4px; 
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* スクロール時に目立つよう影を少し強めに */
+  display: inline-flex;
+  align-items: center;
+}
+
+/* 共通テキストスタイル（リンクと現在の言語） */
+.lang-switch-container .lang-link,
+.lang-switch-container .current {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 16px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* 遷移リンク（押せる方）のスタイル */
+.lang-switch-container .lang-link {
+  color: #0076ff; 
+  transition: background-color 0.2s, opacity 0.2s;
+}
+
+/* 押せる方にマウスを乗せたときの効果 */
+.lang-switch-container .lang-link:hover {
+  background-color: #f0f7ff; 
+}
+
+/* 現在いるページのスタイル（背景を灰色にする） */
+.lang-switch-container .current {
+  background-color: #e5e5e5; 
+  color: #333333; 
+  cursor: default;
+}
+
+/* 不要になった区切り文字「/」は非表示に */
+.lang-switch-container .lang-separator {
+  display: none;
+}
