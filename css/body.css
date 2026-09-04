@@ -1,0 +1,67 @@
+body{
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    background: linear-gradient(
+        to bottom,
+        #FFCBFF 0%,
+        #C6CBFF 50%,
+        #B2FFFF 100%
+    );
+    background-attachment: fixed; /* スクロールしても背景を固定 */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body::before{
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+
+    background: linear-gradient(
+        to bottom,
+        #FFCBFF 0%,
+        #C6CBFF 50%,
+        #B2FFFF 100%
+    );
+
+    background-size: cover;
+}
+
+/* 星レイヤー */
+#stars{
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
+    overflow: hidden;
+}
+.star{
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    animation: twinkle linear infinite;
+ /* 光を少し強く */
+    box-shadow:
+        0 0 4px rgba(255,255,255,.9),
+        0 0 10px rgba(255,255,255,.7),
+        0 0 18px rgba(255,255,255,.4);
+
+    will-change: opacity, transform;
+}
+/* ゆっくり瞬く */
+@keyframes twinkle{
+
+    0%{
+        opacity:.15;
+        transform:scale(.8);
+    }
+
+    50%{
+        opacity:1;
+        transform:scale(1.15);
+    }
+
+    100%{
+        opacity:.15;
+        transform:scale(.8);
+    }
+}

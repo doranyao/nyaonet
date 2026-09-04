@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="https://doranyao.github.io/nyaonet/images/nyaonet_ogp.png"/>
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:title" content="「ドラニャオ」アロコハホームページ" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="アロンくんコハクくんに関する二次創作・利用ガイドライン" />
+    <meta name="description" content="アロンくんコハクくんに関する二次創作・利用ガイドライン">
+    <meta name="Keywords" content="ドラニャオ,創作活動,オリジナルキャラクター,アロン,コハク,ケモノ,ドラゴン,">
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="MyWebSite" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="./script.js">
+    <title>二次創作・利用ガイドライン</title>
+</head>
+<body>
+    <style>
+        .logo{
+            max-width: 400px;
+            width: 80%;
+            margin: 40px auto 0;
+        }
+        .logo img{
+            max-width: 400px;
+            width: 100%;
+        }
+          /* レイアウト */
+        .wrap {
+            max-width: 1000px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 30px 10px;
+            box-sizing: border-box;
+            line-height: 1.6;
+        }
+        .header h1 {
+            max-width: 800px;
+            width: 90%;
+            margin: 0 auto 30px;
+            text-align: center;
+            color: #8f53d9;
+            font-size: 2rem;
+            font-weight: 900;
+        }
+
+        /* ガイドラインのまとめテーブル */
+        .guideline-table {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.85);
+            border: #d6b5ff solid 3px;
+            border-radius: 10px;
+            border-collapse: separate;
+            border-spacing: 0;
+            color: #8f53d9;
+            font-weight: 600;
+            line-height: 1.7;
+        }
+        .guideline-table td {
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* テーブル内テキストの微調整（原稿ママ） */
+        .guideline-table h3 {
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 1.4rem;
+            font-weight: 900;
+            color: #813dd3;
+        }
+        .guideline-table p {
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+        .guideline-table p:last-child {
+            margin-bottom: 0;
+        }
+        .guideline-table ul {
+            /* padding-left: 20px; */
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        .guideline-table li {
+            margin-bottom: 20px;
+        }
+        .guideline-table li:last-child {
+            margin-bottom: 0;
+        }
+        .guideline-table strong {
+            color: #813dd3;
+        }
+
+        /* 各ブロックを区切る下線 hr のスタイル */
+        .guideline-table hr {
+            border: none;
+            border-top: #d6b5ff solid 2px;
+            margin: 0;
+        }
+
+        /* 言語切り替えコンテナ */
+        .lang-switch-container {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            font-family: sans-serif;
+            font-size: 14px;
+            background-color: #ffffff;
+            padding: 4px; 
+            border-radius: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            display: inline-flex;
+            align-items: center;
+        }
+        .lang-switch-container .lang-link,
+        .lang-switch-container .current {
+            display: inline-block;
+            padding: 6px 14px;
+            border-radius: 16px;
+            text-decoration: none;
+            font-weight: bold;
+            text-align: center;
+        }
+        .lang-switch-container .lang-link {
+            color: #0076ff; 
+            transition: background-color 0.2s, opacity 0.2s;
+        }
+        .lang-switch-container .lang-link:hover {
+            background-color: #f0f7ff; 
+        }
+        .lang-switch-container .current {
+            background-color: #e5e5e5; 
+            color: #333333; 
+            cursor: default;
+        }
+        .lang-switch-container .lang-separator {
+            display: none;
+        }
+
+        /* フッター */
+        .footer {
+            background: #b589eb;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 50px;
+        }
+        .footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        /* レスポンシブ（スマホ表示468px以下） */
+        @media screen and (max-width: 468px) {
+            .guideline-table {
+                font-size: .85rem;
+            }
+            .guideline-table td {
+                padding: 15px;
+            }
+            .guideline-table h3 {
+                font-size: 1.15rem;
+            }
+        }
+        /* TOPに戻るボタンエリア（テーブルとフッターの間） */
+.back-to-top-wrap {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+/* 元のギャラリーボタンをベースにした可愛いデザイン */
+.btn-top {
+    display: inline-block;
+    text-align: center;
+    width: 180px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #b27cf4;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 7px;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    font-family: inherit;
+    box-shadow: 0 4px 10px rgba(161, 103, 233, 0.3);
+    transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+.btn-top:hover {
+    background-color: #914de4;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(129, 61, 211, 0.4);
+}
+.btn-top:active {
+    transform: translateY(0);
+}
+
+/* スマホ表示でのサイズ微調整 */
+@media screen and (max-width: 468px) {
+    .btn-top {
+        width: 150px;
+        font-size: 0.95rem;
+        padding: 8px;
+    }
+}
+strong{
+    display: inline-block;
+    background: #9c5aed;
+    color: #fff!important;
+    padding: 2px 10px;
+    border-radius: 5px;
+}
+li{
+    list-style: none;
+}
+    </style>
+
+    <div id="stars"></div>
+
+    <div class="logo">
+        <img src="./images/logo.png" alt="">
+    </div>
+
+       <div class="wrap">
+        <!-- ヘッダーエリア -->
+        <header class="header">
+            <h1>二次創作・利用ガイドライン</h1>
+        </header>
+
+        <!-- すべての内容を1つにまとめた表 -->
+        <table class="guideline-table">
+            <tbody>
+                <!-- 導入文ブロック -->
+                <tr>
+                    <td>
+                        <p>こんにちは！ドラニャオです。<br>
+                        いつもアロンくんとコハクくんを応援していただき、本当にありがとうございます！<br>
+                        みなさまに安心して楽しく創作活動を行っていただくためのガイドラインを作りました。<br>
+                        基本的には「誰でも大歓迎！自由に楽しんでね！」というスタンスですが、一部だけ守っていただきたいルールがあります。<br>
+                        ご一読の上、楽しく創作していただけると嬉しいです！</p>
+                    </td>
+                </tr>
+                <tr><td><hr></td></tr>
+
+                <!-- 1. 著作権について -->
+                <tr>
+                    <td>
+                        <h3>1.著作権について</h3>
+                        <ul>
+                            <li>アロンくんとコハクくんに関する著作権は、原作者であるドラニャオに帰属します。</li>
+                            <li>みなさまが描いてくださった二次創作物の著作権は描いた方に帰属しますが、キャラクターそのものの権利を譲渡・放棄したわけではありません。</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr><td><hr></td></tr>
+
+                <!-- 2. 大歓迎！やっていいこと -->
+                <tr>
+                    <td>
+                        <h3>2.大歓迎！やっていいこと（事前連絡も不要です！）</h3>
+                        <p>趣味の範囲であれば、どなたでも自由に創作を楽しんでいただけます！</p>
+                        <ul>
+                            <li><strong>ファンアートの制作・SNSへの投稿</strong><br>イラスト、漫画、小説など、どんな形でも大歓迎です！</li>
+                            <li><strong>成人向け（R-18/R-18G）表現</strong><br>成人向け表現も全く問題ありません！<br>※ただし、公開する際は各SNSやプラットフォームのルールに従い、ゾーニング（ワンクッション置くなど）の配慮をお願いいたします。</li>
+                            <li><strong>同人誌・同人グッズの制作と頒布</strong><br>同人イベントや即売会、趣味の範囲での少額な頒布（実費程度）であれば自由に販売していただいて大丈夫です。</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr><td><hr></td></tr>
+
+                <!-- 3. これだけはNG！禁止事項 -->
+                <tr>
+                    <td>
+                        <h3>3.これだけはNG！禁止事項（固くお断りいたします）</h3>
+                        <p>楽しく活動を続けるため、以下の行為だけは絶対にしないでください。</p>
+                        <ul>
+                            <li><strong>公式素材の無断転載・加工利用</strong><br>私が公開しているイラスト、ロゴ、文章などをそのままコピーしたり、加工して自分のサイトやSNSに掲載する行為。</li>
+                            <li><strong>AI（人工知能）に関する利用のすべて</strong><br>私のイラストや、みなさまが描いてくれたファンアートを、AIの画像生成・学習へ利用・入力する行為。</li>
+                            <li><strong>自作発言・公式を騙る行為</strong><br>他人の作品を自分が描いたと偽る行為や、公式作品であるかのように誤解を招く表現。</li>
+                            <li><strong>商用利用（商業目的の販売）</strong><br>企業・法人による無断利用や、趣味の範囲を超えた大規模な商業流通・グッズ販売。</li>
+                            <li><strong>他者を傷つける利用</strong><br>特定の個人・団体を誹謗中傷する目的、政治・宗教的メッセージを含む利用。</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr><td><hr></td></tr>
+
+                <!-- 4. 免責事項 -->
+                <tr>
+                    <td>
+                        <h3>4.免責事項</h3>
+                        <ul>
+                            <li>二次創作活動によって生じたトラブルや損害について、原作者は一切の責任を負いかねます。</li>
+                            <li>本ガイドラインの内容は、状況に応じて予告なく変更・修正する場合があります。</li>
+                        </ul>
+                        <p style="text-align: right; font-size: 0.9rem; margin-top: 30px; margin-bottom: 0; color: #8f53d9;">変更日：2026年9月4日</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+            <!-- TOPに戻るボタン -->
+        <div class="back-to-top-wrap">
+            <a href="./index.html" class="btn-top">TOPに戻る</a>
+        </div>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <p>&copy;ドラニャオ</p>
+    </footer>
+    
+    
+ <script>
+
+const stars = document.getElementById("stars");
+
+const STAR_COUNT = 180;   // 好みで変更
+
+for(let i=0;i<STAR_COUNT;i++){
+
+    const star = document.createElement("div");
+    star.className = "star";
+
+    // サイズ（少し見えやすく）
+    const size = Math.random()*3 + 2; // 2〜5px
+
+    star.style.width = size + "px";
+    star.style.height = size + "px";
+
+    // ランダム位置
+    star.style.left = Math.random()*100 + "%";
+    star.style.top  = Math.random()*100 + "%";
+
+    // ランダム透明度
+    star.style.opacity = Math.random()*0.6 + 0.3;
+
+    // ランダムな瞬き
+    star.style.animationDuration =
+        (Math.random()*4 + 3) + "s";   // 5〜10秒
+
+    star.style.animationDelay =
+        (-Math.random()*10) + "s";
+
+    stars.appendChild(star);
+
+}
+
+</script>   
+</body>
+</html>
